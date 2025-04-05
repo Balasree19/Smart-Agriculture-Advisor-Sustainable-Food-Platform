@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Food Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">SUSTAINABLE FOOD MANAGEMENT</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#more">More ▾</a></li>
+            <li><a href="#contact" class="contact-btn">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nourish Sustainability</h1>
+            <p>Join the sustainable food movement</p>
+            <a href="#services" class="cta-btn">VIEW SERVICES</a>
+        </div>
+        <div class="hero-image">
+            <img src="farming.jpg" alt="Farm Image" />
+        </div>
+    </section>
+    <section id="services">
+        <h2><center>Our Services</center></h2>
+        <div class="services-section">
+            <div class="service-card">
+                <img src="local-market.png" alt="Local Farmers Market" height="350" width="350">
+                <div class="service-content">
+                    <h3 class="service-title">Local farmers' market database ➔</h3>
+                    <p>Discover fresh, local produce and organic food suppliers.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="home-gardening.png" alt="Home Food Growing Guide">
+                <div class="service-content">
+                    <h3 class="service-title">Home food growing guide ➔</h3>
+                    <p>Learn to cultivate your own food right at home.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="food-consumption.png" alt="AI-Based Food Waste Tracker">
+                <div class="service-content">
+                    <h3 class="service-title">AI-Based food waste tracker ➔</h3>
+                    <p>Track and reduce your household food waste efficiently.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
